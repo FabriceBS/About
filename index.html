@@ -1,69 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Page setup -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Fabrice Blais-Savoie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-<!--     <link rel="icon" type="image/png" href="favicon.png"> -->
-  
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!--     <link rel="icon" type="image/png" href="favicon.png"> -->
+
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
   </head>
-  
+
   <body>
+    <div class="sidebar">
+      <a target= "_blank" href="https://balsillieschool.ca/people/fabrice-blais-savoie"> <h1>Fabrice Blais-Savoie </h1> </a> 
+      <a href="#about"><p>About</p></a>
+      <a href="#Uwork"><p>Unpublished Work</p></a>
+      <a href="#Pwork"><p>Published Work</p></a>
+      <a href="#resume"><p>Resume</p></a>
+    </div>
 
-    <header id="header">
-      <h1>My Work</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Fabrice Blais-Savoie is a student in the Balsillie School of International Affairs’ Master of International Public Policy. He holds a Bachelor’s degree in International Studies and Political Science from Bishop’s University.\n He has extensive professional experience in policy making and international relations within the Québec government, working as both an international affairs advisor for the Ministry of Higher Education and an international trade policy advisor for the Ministry of Economy, Innovation and Energy. He is a master’s fellow with the Center for International Governance Innovation (CIGI) Digital Policy Hub, working on data governance and trade.\n His research interests sit at the intersection of trade, security, and emerging technologies.
-            </p>
-          </div>
+    <div class="content">
+      <div id="Uwork" class="content-region hide">
+        <p>
+          <b>PISA: Assesing National Education Policy </b><br />
+          Written as an Independant Study (Summer 2025 - BSIA)<br />
+          <a class=link href="MeasuringTariffEvasion.pdf"> Paper </a> <a class=link href="MeasuringTariffEvasion.pptx"> Powerpoint </a> <a class=link href="MeasuringTariffEvasion.pptx"> Repository </a>
+        </p>
+        <p>
+          <b>
+            Measuring Tariff Evasion: The Potential of Ship's Automatic
+            Identification System (AIS) </b
+          ><br />
+          Written for IP605 (Winter 2025 - BSIA) - Presented at MapleMeth IV
+          (June 2025 - Simon Fraser University)<br />
+          <a class="link" href="IP605-Paper.pdf"> Paper </a>
+          <a class="link" href="MeasuringTariffEvasion.pptx">
+            Powerpoint (Incoming)
+          </a>
+          <a class="link" href=""> Repository (Incoming) </a>
+        </p>
 
-          <div id="about" class="content-region hide">
-            <h2>Previous Work</h2>
-            <p>Measuring Tariff Evasion: The Potential of Ship's Automatic Identification System (AIS)</p>
-            <a> </a>
-          </div>
-          
-          
-        </div>
+        <p>
+          <b> Algorithmic Intelligence: How can Canada Implement? </b> <br />
+          Presented at the CDAI Graduate Conference (May 2025) <br />
+          <a class="link" href="AlgorithmicIntelligence.pptx"> Powerpoint </a>
+        </p>
+
+        <p>
+          <b>Human Security: A Lens for Canadian Socioeconomic Policy </b>
+          <br />
+          Written for IP632: Politics of Human Security (Winter 2025 - BSIA)
+          <br />
+          <a class="link" href="IP632-Paper.pdf"> Paper </a>
+          <a class="link" href=""> Repository (Incoming) </a>
+        </p>
+
+        <p>
+          <b>AI & Tech: Fearmongering and Regulatory Capture </b> <br />
+          Written for IP604: Politics, Policy and Globalization (Fall 2025 -
+          BSIA) <br />
+          <a class="link" href="IP604-Paper.pdf"> Paper </a>
+        </p>
+      </div>
+
+      <div id="Pwork" class="content-region hide">
+        <p>
+          <a
+            class="link"
+            href="https://ras-nsa.ca/a-dual-use-solution-to-a-dual-problem-canadas-innovation-and-defence-spending/"
+          >
+            A Dual-Use Solution to a Dual Problem: Canada’s Innovation and
+            Defence Spending
+          </a>
+          <br />
+          <a
+            class="link"
+            href="https://assets.nationbuilder.com/cdfai/pages/9255/attachments/original/1745341265/Fabrice_Blais-Savoie_Coordinating.pdf?1745341265"
+          >
+            Coordinating the Multinational Brigade in Latvia
+          </a>
+          <br />
+        </p>
+      </div>
+
+      <div id="resume" class="content-region hide">
+        <iframe
+          style="width: 100%; height: 100%; aspect-ratio: 4 / 3"
+          src="resume20250530.pdf"
+          width="800"
+          height="500"
+        ></iframe>
+      </div>
+
+      <!-- <div id="about" class="content-region hide" style="max-width:none; width:100vw;position:relative; left:50%; right:50%; margin-left:-45vw; margin-right:-45vw;""> -->
+      <div id="about" class="content-region hide">
+        <img
+          style="float: right; max-width: 50%; height: auto; margin-bottom: 5%"
+          src="headshot.jpg"
+        />
+        <p style="float: left; max-width: 50%; height: auto">
+          Fabrice Blais-Savoie is a student in the Balsillie School of
+          International Affairs’ Master of International Public Policy. He holds
+          a Bachelor’s degree in International Studies and Political Science
+          from Bishop’s University.<br /><br />
+          He has extensive professional experience in policymaking and
+          international relations within the Québec government, working as both
+          an International Affairs Advisor for the Ministry of Higher Education
+          and an International Trade Policy Advisor for the Ministry of Economy,
+          Innovation and Energy. He is a master’s fellow with the Center for
+          International Governance Innovation (CIGI) Digital Policy Hub, working
+          on data governance and trade.<br /><br />
+          His research interests sit at the intersection of trade, security, and
+          emerging technologies.
+        </p>
       </div>
     </div>
 
-    <footer>  
-      Footer region
-    </footer>
-    
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
+
+    <script>
+      // Make all links with class="link" open in a new tab
+      document.addEventListener("DOMContentLoaded", function () {
+        var links = document.querySelectorAll("a.link");
+        for (var i = 0; i < links.length; i++) {
+          links[i].setAttribute("target", "_blank");
+        }
+      });
+    </script>
+    <script>
+    $(document).ready(function() {
+    // Set the first link as active by default (or choose another one)
+    // $(".sidebar a:first").addClass("active");
     
+    // When a sidebar link is clicked
+    $(".sidebar a").click(function() {
+      // Remove current class from all sidebar links
+      $(".sidebar p").removeClass("current");
+      
+      // Add current class to the clicked link
+      $(this).find("p").addClass("current");
+    });
+    });
+    </script>
   </body>
 </html>

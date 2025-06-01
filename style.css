@@ -3,6 +3,13 @@
  */
 
 /* html is set to 62.5% so that all the REM measurements are based on 10px sizing. So basically 1.5rem = 15px */
+:root {
+  --highlightColor: #16668C;
+  --textColor: #ffffff;
+}
+
+
+
 html {
   font-size: 62.5%;
 }
@@ -11,7 +18,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  color: var(--textColor);
+  margin: 1%;
 }
 
 /**
@@ -20,10 +28,14 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color: var(--highlightColor);
 }
 a:focus {
   outline: thin dotted;
+}
+a:hover{
+  color:#1D86B8 ;
+  text-decoration: underline;
 }
 
 small {
@@ -56,34 +68,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  * Paragraphs
  */
 p {
-  margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
-}
-p + p {
-
-}
-
-/**
- * Quotes & Blockquotes
- */
-q {
-  quotes: '\00201C' '\00201D';
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
-
-blockquote {
-  /*background-color: #F8F8F8;*/
-  border-left: 2px solid #AFC0D2;
-  margin: 1.6em 10%;
-  padding: .75em 1em;
-  font-size:1.8rem;
-}
-blockquote p:last-child {
-  margin-bottom: 0;  
+  margin: 0.2 auto 0.1em auto; /* bottom margin for paragraphs */
 }
 
 /**
@@ -93,27 +78,23 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.jpg) center center no-repeat fixed;
+  background:url(bcg.png) center center no-repeat fixed;
   background-size:cover;
 }
-body {
-  max-width:800px;
-  margin:25px auto;
-}
-header, #content, footer { 
-  background: rgba(0,0,0,.8); 
-  padding:25px;
-  color:#FFFFFF; 
-}
-iframe {
-  max-width:100%;
+
+header, footer { 
+  /* background: rgba(0,0,0,.8);  */
+  padding:15px;
+  color:var(--textColor); 
 }
 
 /* Menu Links */
-ul.main-menu {
+/* ul.main-menu {
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
+  position: inherit;
   flex-wrap: wrap;
   justify-content: left;
   list-style: none;
@@ -125,11 +106,64 @@ ul.main-menu li a {
   color:#cfd2da;
 }
 ul.main-menu li a:hover {
-  color:#FFFFFF;
+  color:var(--textColor);
 }
-ul.main-menu li a.active {
-  color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+*/
+
+a.link{
+  padding-right: 2em;
+  font-weight: bold;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* float: left; */
+  width: 20vw;
+  height: calc(100% - 2vh); /*Adjust height to account for padding */
+  background:url(Scrollbar.jpg) center center no-repeat fixed;
+  padding: 20px;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.sidebar h1 {
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  color: var(--textColor);
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.sidebar a:hover {
+  background-color: var(--highlightColor);
+  transition: background-color 0.3s, background-position 0.3s;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  background-image: linear-gradient(to right, var(--highlightColor) 50%, transparent 50%);
+}
+.sidebar p{
+  margin:0;
+  display: inline;;
+  align-self: flex-start;
+  border-bottom: solid transparent 3px;
+}
+
+.sidebar p.current {
+  border-bottom-color:white;
+}
+
+.content {
+  position: relative;
+  width: 75vw; /* Set width to leave space for sidebar */
+  margin-left: 22vw; /* Push content to the right of sidebar */
+  /* padding: 15px; */
+  color: var(--textColor);
 }
 
 /* Utility classes */
